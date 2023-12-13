@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PDF viewer App</title>
+  </head>
+  <body>
+    <nav class="top-bar">
+      <button class="btn" id="prev-page">
+        <i class="fas fa-arrow-circle-left"></i> Prev page
+      </button>
+      <button class="btn" id="next-page">
+        Next page <i class="fas fa-arrow-circle-right"></i>
+      </button>
+      <span class="page-info">
+        Page <span id="page-num"></span> of <span id="page-count"></span>
+      </span>
+    </nav>      
+
+    <canvas id="pdf-render">
+      
+    </canvas>
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.4.456/pdf.min.js"></script>
+    <script src="https://kit.fontawesome.com/da24972743.js" crossorigin="anonymous"></script>
+    <script type="module" src="/js/main.js"></script>
+  </body>
+</html>
